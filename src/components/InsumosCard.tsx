@@ -93,6 +93,7 @@ const InsumosCard = ({
 
           <div>
             <InputText
+              type="number"
               label="Cantidad"
               id="cantidad"
               name="cantidad"

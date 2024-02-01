@@ -186,7 +186,7 @@ const Entregas = () => {
         </div>
       </div>
       <h2>Pendientes de entregar</h2>
-      {!hasPendingEntregas ? (
+      {hasPendingEntregas ? (
         <>
           <div className="table_header table_row_entregas">
             <p>
