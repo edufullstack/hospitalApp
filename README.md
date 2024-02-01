@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hospital App
 
-## Getting Started
+---
 
-First, run the development server:
+### Instalación
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clona el repositorio
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instala las dependencias en la carpeta raíz del proyecto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Navega a la carpeta backend e instala las dependencias
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Configuración
 
-## Learn More
+Para configurar el entorno de desarrollo local, necesitarás añadir un archivo `.env` en la carpeta `backend` con las siguientes variables:
 
-To learn more about Next.js, take a look at the following resources:
+DB_USER=TuUsuarioDeBaseDeDatos
+DB_PASSWORD=TuContraseñaDeBaseDeDatos
+DB_HOST=HostDeBaseDeDatos
+DB_NAME=NombreDeBaseDeDatos
+DB_PORT=PuertoDeBaseDeDatos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Ejecución
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Para poner en funcionamiento el proyecto, debes iniciar tanto el backend como el frontend. Sigue estos pasos para hacerlo:
 
-## Deploy on Vercel
+1. **Iniciar el Backend**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Primero, navega a la carpeta `backend` desde la línea de comandos.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   Luego, inicia el servidor backend ejecutando: npm start
+
+Esto debería poner en marcha el servidor backend en el puerto especificado.
+
+2. **Iniciar el Frontend**
+
+En una nueva terminal, navega a la carpeta raíz del proyecto.
+
+Ahora, inicia el frontend con el siguiente comando: npm run dev
+
+Esto levantará el frontend, accesible a través de un navegador web en `http://localhost:3000`
