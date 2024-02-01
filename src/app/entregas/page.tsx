@@ -40,10 +40,8 @@ const Entregas = () => {
   }, [actualizar]);
 
   const hasPendingEntregas = useMemo(() => {
-    console.log("entregasFiltradas", asignaciones);
     let flag = false;
     asignaciones.map((asignacion: any) => {
-      console.log("asignacion", asignacion.borrado);
       if (!asignacion.borrado) flag = true;
     });
     return flag;
@@ -208,12 +206,12 @@ const Entregas = () => {
               <strong>Asignado</strong>
             </p>
             <p>
-              <strong>Asignar</strong>
+              <strong>Entregar</strong>
             </p>
           </div>
           {asignacionesFiltradas
             .filter(
-              (asignacion: any) => !asignacion.asignado && !asignacion.borrado
+              (asignacion: any) => asignacion.asignado && !asignacion.borrado
             )
             .map((asignacion: any) => (
               <div
