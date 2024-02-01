@@ -1,6 +1,5 @@
 import { fetchData } from "@/utils/fetch";
 import storageData from "@/utils/storage";
-import Swal from "sweetalert2";
 
 export const setOrganizationInfo = async () => {
   try {

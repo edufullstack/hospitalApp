@@ -80,11 +80,14 @@ const InsumosCard = ({
               onChange={(e) => setInsumoSeleccionado(e.target.value)}
             >
               <option value="">-- Selecciona un insumo --</option>
-              {nombreInsumo.map((nombre: any) => (
-                <option key={nombre.insumoId} value={nombre.insumoId}>
-                  {nombre.tipo}
-                </option>
-              ))}
+              {nombreInsumo.map(
+                (nombre: any) =>
+                  !nombre.borrado && (
+                    <option key={nombre.insumoId} value={nombre.insumoId}>
+                      {nombre.tipo}
+                    </option>
+                  )
+              )}
             </select>
           </div>
 
