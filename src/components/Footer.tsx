@@ -1,17 +1,11 @@
 const Footer = () => {
-  return (
-    <footer
-      style={{
-        backgroundColor: "#000000",
-        padding: "20px",
-        textAlign: "center",
-      }}
-    >
-      <p>
-        &copy; {new Date().getFullYear()} Mi Empresa. Todos los derechos
-        reservados.
-      </p>
-      <ul style={{ listStyleType: "none", padding: 0 }}>
+	return (
+		<footer>
+			<p>
+				&copy; {new Date().getFullYear()} Mi Empresa. Todos los derechos
+				reservados.
+			</p>
+			{/*   <ul >
         <li>
           <a href="/about">Acerca de Nosotros</a>
         </li>
@@ -24,9 +18,9 @@ const Footer = () => {
         <li>
           <a href="/terms">Términos y Condiciones</a>
         </li>
-      </ul>
-    </footer>
-  );
+      </ul> */}
+		</footer>
+	);
 };
 
 export default Footer;
