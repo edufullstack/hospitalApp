@@ -15,7 +15,7 @@ export async function fetchData({ url, method, body }: FetchDataProps) {
   };
   try {
     const response = await fetch(
-      "http://localhost:3001/api/v1/" + url,
+      "https://hospitalapp-production.up.railway.app/api/v1/" + url,
       options
     );
     return response.json();
