@@ -10,11 +10,9 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <Link href="/" className={styles.brandName}>
-        <Image src="/pymo.png" width={80} height={30} alt="pymo logo"/>
-        
-        <h1>
-          Hospital-App
-        </h1>
+        <Image src="/home.svg" width={80} height={30} alt="pymo logo" />
+
+        <h1>Hospital-App</h1>
       </Link>
     </nav>
   );
